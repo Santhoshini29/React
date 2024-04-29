@@ -48,9 +48,7 @@ import ReactDOM from "react-dom/client";
          <div className="res-container">
          <RestaurentCard/> 
          <RestaurentCard/>
-          
-
-         </div>
+       </div>
       </div> 
     )
    };
