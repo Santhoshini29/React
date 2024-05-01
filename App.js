@@ -22,7 +22,7 @@ import ReactDOM from "react-dom/client";
    };
     
     
-   const RestaurentCard =() =>{
+   const RestaurentCard =({resName,cuisine}) =>{
     return(
        <div className="res-card" style={{
         backgroundColor:"#f0f0f0",
@@ -31,8 +31,8 @@ import ReactDOM from "react-dom/client";
         className="res-logo"
          alt="res-logo"
           src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/be2bfa3b5dde1e71b41144e9b62878a9"></img>
-         <h3> Hyderabadi Biryani  </h3>
-         <h4>Biryani</h4>
+         <h3> {resName} </h3>
+         <h4>{cuisine}</h4>
          <h4>4.4 stars</h4>
          <h4>38 minutes </h4>
           
@@ -46,13 +46,16 @@ import ReactDOM from "react-dom/client";
       <div className="body">
          <div className="search">Search</div>
          <div className="res-container">
-         <RestaurentCard/> 
-         <RestaurentCard/>
-         <RestaurentCard/> 
-         <RestaurentCard/>
-         <RestaurentCard/> 
-         <RestaurentCard/>
-       </div>
+          
+              <RestaurentCard
+              resName="Hyderabadi Biryani"
+              cuisine ="Biryani"
+              />
+              <RestaurentCard
+               resName="KFC"
+              cuisine ="Burger"
+               />  
+      </div>
       </div> 
     )
    };
