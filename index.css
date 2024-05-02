@@ -27,7 +27,7 @@
   margin:3px;
    padding: 4px;
    width: 200px;
-   height: 350px;
+    
     
 }
 
@@ -41,7 +41,7 @@
 }
 
 .res-logo {
-    
+  height:250px; 
   width: 100%;
 }
 
